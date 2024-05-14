@@ -1,0 +1,48 @@
+body {
+  background-image: url('../img/BACKGROUND.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.container {
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.form-group {
+  position: relative;
+  margin-bottom: 4px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-control {
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+}
+
+.icon {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.btn-primary {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: #232121;
+  cursor: pointer;
+}

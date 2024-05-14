@@ -1,0 +1,117 @@
+
+
+body {
+  background-image: url('../img/BACKGROUND.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container-fluid {
+  padding: 0 20px;
+}
+
+.row {
+  margin: 0;
+}
+
+header {
+  background-color: #ffffff03;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.navigation {
+  justify-content: space-between;
+}
+
+.navigation a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.navigation a:hover {
+  color: #ffffff;
+}
+
+.btnLogin-popup {
+  margin-left: 20px;
+}
+
+/* Wrapper Styles */
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: 50px;
+}
+
+.form-box {
+  width: 400px;
+  background-color:#ffffff;
+  padding: 50px;
+  border: 1px solid #000000;
+  border-radius: 50px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+}
+
+.esqueceu-senha {
+  text-align: center;
+}
+
+.esqueceu-senha h2 {
+  margin-top: 0;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group-text {
+  background-color: #fff;
+  border: 1px solid #050505;
+  padding: 10px;
+  width: 40px;
+  text-align: center;
+}
+
+.input-group-text ion-icon {
+  font-size: 18px;
+}
+
+.form-control {
+  height: 40px;
+  padding: 10px;
+  border: 1px solid #000000;
+}
+
+.form-control:focus {
+  border-color: #aaa;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  background-color: #337ab7;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #23527c;
+}

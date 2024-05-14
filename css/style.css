@@ -1,0 +1,79 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url('../img/BACKGROUND.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.navigation a {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s;
+}
+
+.navigation a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navigation .btnLogin-popup {
+  margin-left: auto;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-box {
+  max-width: 400px;
+  width: 100%;
+}
+
+.input-box {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  border: 1px solid #ced4da;
+  transition: border-color 0.3s;
+}
+
+.input-box input:focus {
+  outline: none;
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+}
+
+.input-box .icon {
+  color: #6c757d;
+}
+
+.remember-forgot {
+  margin-bottom: 1rem;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.no-account-text {
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+
+.register-link {
+  color: #007bff;
+}
