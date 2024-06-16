@@ -1,42 +1,88 @@
 <!DOCTYPE html>
-<html lang="br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <style>
-        body {
-            background-image: url('../img/tela.png');
-            background-repeat: no-repeat;
-            background-size: 55% auto;
-            background-position: center;
-            position: relative; 
-            min-height: 100vh;
-        }
+    <title>iara</title>
+    <link rel="stylesheet" href="../css/pginicial.css">
+    <link rel="icon" type="image/png" href="../img/icon.jpg">
 
-        #searchContainer {
-            position: absolute;
-            top: 8px;  /*posição*/
-            left: 50%;
-            transform: translateX(-50%);
-            text-align: center;
-        }
-
-        #searchInput {
-            width: 300px;
-            padding: 5px 20px; /*expressura*/
-            margin-right: 8px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-    </style>
 </head>
 <body>
-    <div id="searchContainer">
-        <div class="input-group mb-3">
-            <input type="text" class="form-control" id="searchInput" placeholder="digite aqui">
-            <button class="btn btn-primary" onclick="location.href='pgaviso.html'">Pesquisar</button>
+    <div class="top-bar">
+        <div class="menu">
+            <div class="menu-icon">
+                &#9776;
+            </div>
+            <div class="menu-content">
+                <a href="pgaviso.html">Área do Usuário</a>
+                <a href="pgaviso.html">Loja</a>
+                <a href="pgaviso.html">Jogos</a>
+                <a href="pgaviso.html">Fórum</a>
+                <a href="pgaviso.html">Suporte</a>
+            </div>
+        </div>
+        <input type="text" placeholder="Buscar..." class="search-bar">
+        <div class="cart">
+            <a href="pgaviso.html">
+                <img src="../img/carrinho.png" alt="Carrinho" class="cart-icon">
+                Carrinho
+            </a>
         </div>
     </div>
+    <div class="background-image"></div>
+    
+    <div class="mais-comprados-section">
+          <h2>Mais Comprados</h2>
+        <div class="mais-comprados-container">
+            <div class="mais-comprados">
+            
+                <div class="produto">
+                    <img src="../img/Chroma Squad.jpg" alt="Produto 1">
+                    <h3>CHROMA SQUAD</h3>
+                    <p>Um jogo indie que simula uma série de TV onde você controla um grupo de dublês que decide criar seu próprio programa de TV inspirado em super-heróis japoneses. O jogo combina elementos de estratégia, gerenciamento e RPG tático.</p>
+                   
+                </div>
+                <div class="produto">
+                    <img src="../img/Dandara.jpg" alt="Produto 2">
+                    <h3>Dandara</h3>
+                    <p>Um jogo de plataforma 2D que combina exploração e ação, ambientado em um mundo surreal inspirado na cultura brasileira. O jogador controla a personagem titular, Dandara, em sua jornada para salvar o mundo de Salt.</p>
+                   
+                </div>
+                <div class="produto">
+                    <img src="../img/HorizonChase.jpg" alt="Produto 3">
+                    <h3>Horizon Chase</h3>
+                    <p>Um jogo de corrida inspirado nos clássicos dos anos 80 e 90, como Top Gear e Out Run. Com gráficos modernos e jogabilidade nostálgica, o jogo oferece uma experiência de corrida arcade divertida e desafiadora.</p>
+                   
+                </div>
+                <div class="produto">
+                    <img src="../img/Fobia.jpg" alt="Produto 4">
+                    <h3>Fobia – St. Dinfna Hotel</h3>
+                    <p>Um jogo de quebra-cabeças e aventura onde o jogador assume o papel de um investigador paranormal em um hotel abandonado. Com uma atmosfera sombria e puzzles criativos, o jogo oferece uma experiência única e imersiva.</p>
+                  
+                </div>
+                <div class="produto">
+                    <img src="../img/Hazel.jpg" alt="Produto 5">
+                    <h3>Hazel Sky</h3>
+                    <p>Um jogo de aventura e exploração onde o jogador controla Hazel, uma jovem em busca de sua mãe desaparecida. Com belos gráficos e uma história envolvente, o jogo oferece uma experiência emocionante e cativante.</p>
+                  
+                </div>
+    
+                <div class="produto">
+                    <img src="../img/paozito.webp" alt="Produto 7">
+                    <h3>Pãozito</h3>
+                    <p>Um jogo casual onde o jogador controla um pão em sua jornada para se tornar uma torrada. Com controles simples e uma jogabilidade relaxante, o jogo oferece uma experiência divertida e descontraída.</p>
+                    
+                </div>
+            
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.querySelector('.menu-icon').addEventListener('click', function() {
+            document.querySelector('.menu-content').classList.toggle('show');
+        });
+    </script>
 </body>
 </html>

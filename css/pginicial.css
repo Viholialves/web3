@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #870887; /* Fundo roxo inferior */
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #800080; /* Roxo */
+    padding: 10px 20px;
+    width: 100%;
+    z-index: 1000;
+    position: fixed; /* Fixa a barra no topo */
+    top: 0; /* Mantém a barra no topo */
+}
+
+
+.search-bar {
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    flex-grow: 1;
+    max-width: 500px; /* Largura máxima do campo de pesquisa */
+    margin: 0 20px;
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+}
+
+.cart a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    margin-right: 22px; /*palavra carrinho*/
+}
+
+.cart-icon {
+    width: 30px;
+    height: 30px;
+}
+
+
+.menu {
+    position: relative;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+.menu-content {
+    display: none;
+    position: absolute; /* Altera para absolute */
+    left: 0; /* Ajusta a posição para aparecer ao lado do ícone do menu 3 traços*/
+    top: 100%; /* Posiciona abaixo da barra superior */
+    background-color: #800080; /* Roxo */
+    border: 1px solid #ff99e9;
+    border-radius: 4px;
+    box-shadow: 0 8px 16px rgb(255, 140, 240);
+    z-index: 1;
+    width: 200px; /* Largura fixa para o menu */
+}
+
+.menu-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    white-space: nowrap;
+}
+
+.menu-content a:hover {
+    background-color: #9A5DA1;
+}
+
+.menu-content.show {
+    display: block;
+}
+
+.background-image {
+    background-image: url('../img/iara.png'); /* imagem */
+    background-repeat: no-repeat;
+    height: 500px; /* Ajuste a altura conforme necessário */
+  background-size: cover;
+}
+
+.mais-comprados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #e20ee2; /* Fundo  ao redor dos jogos */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.produto {
+    flex: 0 0 calc(25% - 20px); /* Largura de 25% com margem interna */
+    margin: 10px; /* Espaçamento entre os jogos */
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .produto {
+        flex: 0 0 calc(50% - 20px); /* Largura de 50% com margem interna para telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .produto {
+        flex: 0 0 calc(100% - 20px); /* Largura de 100% com margem interna para telas muito pequenas */
+    }
+}
+
+
+.produto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.produto h3 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.produto p {
+    font-size: 16px;
+    color: #000000;
+    text-align: left; /* Alinha o texto à esquerda */
+}
+.mais-comprados-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px; /* Aumenta o espaçamento inferior */
+    color: #00FFF0; /* Altera a cor do texto */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    text-align: center; /* Centraliza o texto */
+}
