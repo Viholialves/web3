@@ -22,7 +22,7 @@
                 <a href="pgaviso.html">Suporte</a>
             </div>
         </div>
-        <input type="text" placeholder="Buscar..." class="search-bar">
+        <input type="text" placeholder="Buscar..." class="search-bar" id="search-input">
         <div class="cart">
             <a href="pgaviso.html">
                 <img src="../img/carrinho.png" alt="Carrinho" class="cart-icon">
@@ -30,10 +30,8 @@
             </a>
         </div>
     </div>
-    <div class="background-image"></div>
-    
     <div class="mais-comprados-section">
-          <h2>Mais Comprados</h2>
+        <br><br>
         <div class="mais-comprados-container">
             <div class="mais-comprados">
             
@@ -82,6 +80,22 @@
     <script>
         document.querySelector('.menu-icon').addEventListener('click', function() {
             document.querySelector('.menu-content').classList.toggle('show');
+        });
+
+
+        const searchInput = document.getElementById('search-input');
+        const produtos = document.querySelectorAll('.produto');
+
+        searchInput.addEventListener('input', function() {
+        const searchTerm = this.value.toLowerCase();
+        produtos.forEach(function(produto) {
+            const productName = produto.querySelector('h3').textContent.toLowerCase();
+            if (productName.includes(searchTerm)) {
+            produto.style.display = 'block';
+            } else {
+            produto.style.display = 'none';
+            }
+        });
         });
     </script>
 </body>
