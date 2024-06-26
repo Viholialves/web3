@@ -24,6 +24,12 @@
         </div>
         <input type="text" placeholder="Buscar..." class="search-bar" id="search-input">
         <div class="cart">
+            <!-- Exibi o nome e foto do usuario-->
+            <div class="perfil" id="perfil" style=" padding: 5px; display: flex; align-items: center; justify-content: space-between; border: 1px solid #ccc; border-radius: 10px;">
+                <img style="width: 35px; padding-right: 5px;" id="foto_">
+                <p id="nome_"></p>
+            </div>
+            
             <a href="pgaviso.html">
                 <img src="../img/carrinho.png" alt="Carrinho" class="cart-icon">
                 Carrinho
@@ -88,15 +94,26 @@
 
         searchInput.addEventListener('input', function() {
         const searchTerm = this.value.toLowerCase();
-        produtos.forEach(function(produto) {
-            const productName = produto.querySelector('h3').textContent.toLowerCase();
-            if (productName.includes(searchTerm)) {
-            produto.style.display = 'block';
-            } else {
-            produto.style.display = 'none';
-            }
+            produtos.forEach(function(produto) {
+                const productName = produto.querySelector('h3').textContent.toLowerCase();
+                if (productName.includes(searchTerm)) {
+                produto.style.display = 'block';
+                } else {
+                produto.style.display = 'none';
+                }
+            });
         });
-        });
+        
+        //se os dados de perfil existirem roda a função carregar dados
+        if(localStorage.getItem('nome') && localStorage.getItem('foto')){
+            var nome = localStorage.getItem('nome');
+            var foto = localStorage.getItem('foto');
+
+            //adiciona o nome a foto a tag perfil
+            nome_.textContent = nome;
+            foto_.setAttribute("src",foto)
+
+        }
     </script>
 </body>
 </html>
