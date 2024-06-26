@@ -80,7 +80,7 @@
 
                             console.log(profile);
                             // Redirecionar para a página inicial
-                            window.location.href = "./web3/pginicial.html";
+                            window.location.href = "./pginicial.html";
                         }
                         window.onload = function () {
                           google.accounts.id.initialize({
@@ -96,26 +96,7 @@
                         }
                       </script>
                       <div id="buttonDiv"></div>
-                    <script>
-                        function onSignIn(googleUser) {
-                            var profile = googleUser.getBasicProfile();
-                            
-                            var userID = profile.getId();
-                            var userName = profile.getName();
-                            var userEmail = profile.getEmail();
-                            var userPicture = profile.getImageUrl();
-                            
-                            // Armazenar as informações do usuário no localStorage
-                            localStorage.setItem('userID', userID);
-                            localStorage.setItem('userName', userName);
-                            localStorage.setItem('userEmail', userEmail);
-                            localStorage.setItem('userPicture', userPicture);
-                        
-                            console.log(userEmail + userID + userName);
-                            // Redirecionar para a página inicial
-                            //window.location.href = "pginicial.html";
-                        }
-                        </script>
+                    
                     <div class="mt-3">
                         <p class="no-account-text text-center">Não tem uma conta?
                             <a href="cadastro.html" class="register-link">Registre-se</a>
