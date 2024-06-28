@@ -46,3 +46,14 @@ body {
   color: #232121;
   cursor: pointer;
 }
+/* Responsividade */
+@media (max-width: 768px) {
+    header .logo {
+        font-size: 1.2rem;
+    }
+
+    header .navigation a,
+    header .btnLogin-popup {
+        font-size: 0.9rem;
+    }
+}
